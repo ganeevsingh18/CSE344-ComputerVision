@@ -3,31 +3,31 @@
 This repo contains the projects I completed for the **Computer Vision course (CSE344 / CSE544 / ECE344 / ECE544)** in Winter 2024.  
 Each project follows a cycle of **building from scratch → improving with advanced methods → analyzing results and limitations**
 
-## Image Classification & Segmentation  
-- **CNN from scratch:** First model trained on the Russian Wildlife dataset (65% accuracy, F1 0.65). Learned limits of small custom architectures.  
-- **Pre-trained ResNet18:** Accuracy improved to 83.5% (F1 0.83) but showed overfitting, highlighting risks of high-capacity models on limited data.
-- **Data augmentation:** Boosted accuracy to 90.1% (F1 0.90), solved overfitting, fixed misclassifications (e.g. black vs brown bear).  
-- **Segmentation with DeepLabv3+:** Applied Cityscapes-trained model on Indian Driving Dataset, the model showed strong results on sky/vegetation/buildings but poor on scooters/pedestrians, showing real-world dataset bias. The SOTA model DeepLabv3+ was trained on Cityscape dataset, it failed to generalise against dataset collected on Indian streets.
-Learned how models evolve step by step and why generalization matters as much as raw accuracy.  
+## Image Classification & Segmentation using Deep Learning
+
+### Image Classification
+1. CNN from scratch: First trained a CNN model from scratch on the Russian Wildlife dataset (65% accuracy, F1 0.65). The model didn't perform as well, revealing the limitations of small custom architectures.
+2. Pre-trained ResNet18: Fine tuned a pre-trained Resnet model on the same dataset. The model performed well, accuracy improved to 83.5% (F1 0.83) but showed overfitting, highlighting risks of high-capacity models on limited data.
+Analysis of misclassification errors showed that both low-color and cropped images were classified incorrectly.
+3. Data augmentation: 
+Augmented data with Colour Blasted, Cropped and rotated images and retrained Resenet18 Pre-trained model. This Boosted accuracy to 90.1% (F1 0.90). This solved overfitting and fixed misclassifications (e.g. black vs brown bear).  
+
+### Image Segmentation 
+Applied a DeepLabv3+ model trained on Cityscapes to the Indian Driving Dataset. It performed well on sky, vegetation, and buildings but failed on scooters and pedestrians, revealing strong dataset bias. The model, optimized for European road scenes, struggled to generalize to Indian street conditions.
 
 ## Camera Calibration & LIDAR-Camera Cross-Calibration  
-- **Transformations:** Derived rotation/translation matrices and validated with Rodrigues’ formula.  
-- **Camera calibration:** Estimated intrinsics, extrinsics, distortion coefficients, and reprojection errors using chessboard images.  
-- **Cross-calibration:** Solved for 3D transformation between camera and LIDAR, projected LIDAR points into the image, and analyzed alignment errors.  
+1. Estimated camera intrinsics, extrinsics, distortion coefficients, and reprojection errors using chessboard images.  
+2. Solved the 3D transformation between camera and LIDAR, projecting LIDAR points into the image to analyze alignment errors.  
 Gained hands-on understanding of how multi-sensor systems are aligned in robotics and autonomous driving.  
 
-## Epipolar Geometry & Panorama Generation  
-- **Theory:** Derived epipoles from the Essential matrix, studied rectification.  
-- **Panorama pipeline:** Built with SIFT keypoints, BruteForce + FLANN matching, RANSAC homography, warping, and stitching.  
-- **Multi-image panorama:** Extended to stitch an entire sequence.  
-Learned the geometry behind stereo vision and applied it to create working panorama stitching from scratch.  
+## Panorama Generation  
+1. Derived epipoles from the Essential matrix and studied rectification to build intuition about stereo geometry.
+2. implemented a panorama pipeline using SIFT keypoints, BruteForce and FLANN matching, RANSAC homography, warping, and stitching.
+3. I extended the pipeline to support multi-image sequences, applying stereo vision concepts to create a complete panorama stitching system from scratch.
 
 ## Vision-Language Models (Segmentation & VQA)  
-- **Open-Vocabulary Segmentation (CLIPSeg):**  
-  Segmented images using text prompts instead of fixed labels. Applied to the Indian Driving Dataset — learned how prompts like *“road”*, *“person”*, or *“traffic sign”* produce masks directly from language. Compared outputs with ground truth and DeepLabv3+ from Project 1, computing mAP to evaluate strengths and gaps.  
-
-- **Visual Question Answering (BLIP):**  
-  Used BLIP to answer natural language questions about images (*“Where is the dog?”*, *“What is the man doing?”*). Extended to a dataset of images + annotated Q&A, computed accuracy, and analyzed failure cases when the model misunderstood context.  
+- Open-Vocabulary Segmentation (CLIPSeg): Segmented images using text prompts instead of fixed labels. Compared outputs with ground truth and DeepLabv3+ from Image Segmentation Project, computing mAP to evaluate strengths and gaps.  
+- Visual Question Answering (BLIP): Used BLIP to answer natural language questions about images. Extended to a dataset of images + annotated Q&A, computed accuracy, and analyzed failure cases when the model misunderstood context.  
 
 ## Takeaways
 - Built end-to-end systems: classification, segmentation, calibration, panorama stitching, 3D reconstruction.  
