@@ -37,8 +37,6 @@ Learned the geometry behind stereo vision and applied it to create working panor
 
 - **Visual Question Answering (BLIP):**  
   Used BLIP to answer natural language questions about images (*“Where is the dog?”*, *“What is the man doing?”*). Extended to a dataset of images + annotated Q&A, computed accuracy, and analyzed failure cases when the model misunderstood context.  
-
-played around and learnt about how vision language models work in practice, from using text prompts for segmentation to asking models natural questions about images
 ---
 
 ## Takeaways
