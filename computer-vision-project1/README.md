@@ -1,6 +1,6 @@
 # CV_Assignment1
 
-This subdirectory contains my submissions for **Assignment 1** of the Computer Vision course (CSE344 / CSE544 / ECE344 / ECE544) for the year 2024.  
+This subdirectory contains my submissions for **Project 1** of the Computer Vision course (CSE344 / CSE544 / ECE344 / ECE544) for the year 2024.  
 The assignment involves **theoretical questions** and **practical implementation** of image classification and segmentation models.
 
 ---
