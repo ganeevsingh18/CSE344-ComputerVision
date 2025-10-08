@@ -1,0 +1,114 @@
+2025-10-07 21:47:02,615 INFO    MainThread:135471 [wandb_setup.py:_flush():81] Current SDK version is 0.22.1
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_setup.py:_flush():81] Configure stats pid to 135471
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_setup.py:_flush():81] Loading settings from /home/ganeev/.config/wandb/settings
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_setup.py:_flush():81] Loading settings from /home/ganeev/Desktop/ComputerVision/CV_assignment1/wandb/settings
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_init.py:setup_run_log_directory():705] Logging user logs to /home/ganeev/Desktop/ComputerVision/CV_assignment1/wandb/run-20251007_214702-3w9wchg0/logs/debug.log
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to /home/ganeev/Desktop/ComputerVision/CV_assignment1/wandb/run-20251007_214702-3w9wchg0/logs/debug-internal.log
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_init.py:monkeypatch_ipython():624] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x73286e94f4f0>
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_init.py:init():832] calling init triggers
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-10-07 21:47:02,616 INFO    MainThread:135471 [wandb_init.py:init():880] starting backend
+2025-10-07 21:47:02,842 INFO    MainThread:135471 [wandb_init.py:init():883] sending inform_init request
+2025-10-07 21:47:02,859 INFO    MainThread:135471 [wandb_init.py:init():891] backend started and connected
+2025-10-07 21:47:02,865 INFO    MainThread:135471 [wandb_run.py:_label_probe_notebook():1330] probe notebook
+2025-10-07 21:47:02,873 INFO    MainThread:135471 [wandb_init.py:init():961] updated telemetry
+2025-10-07 21:47:02,880 INFO    MainThread:135471 [wandb_init.py:init():985] communicating run to backend with 90.0 second timeout
+2025-10-07 21:47:03,999 INFO    MainThread:135471 [wandb_init.py:init():1036] starting run threads in backend
+2025-10-07 21:47:04,095 INFO    MainThread:135471 [wandb_run.py:_console_start():2506] atexit reg
+2025-10-07 21:47:04,095 INFO    MainThread:135471 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-10-07 21:47:04,095 INFO    MainThread:135471 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-10-07 21:47:04,095 INFO    MainThread:135471 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-10-07 21:47:04,097 INFO    MainThread:135471 [wandb_init.py:init():1076] run started, returning control to user process
+2025-10-07 21:47:04,098 INFO    MainThread:135471 [wandb_watch.py:_watch():68] Watching
+2025-10-07 21:47:12,106 INFO    wandb-AsyncioManager-main:135471 [service_client.py:_forward_responses():80] Reached EOF.
+2025-10-07 21:47:12,106 INFO    wandb-AsyncioManager-main:135471 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
+2025-10-07 21:47:12,162 ERROR   MainThread:135471 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/tmp/ipykernel_135471/910108935.py", line 5, in <module>
+    train(cnn_model, train_loader,validation_loader,criterion=criterion, optimizer=optimizer,scheduler=scheduler,hyperparameters=hyperparameters)
+  File "/tmp/ipykernel_135471/2967068527.py", line 28, in train
+    running_loss += loss.item()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2433, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1595, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 802, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 37, in _publish_output_raw
+    self._publish(rec)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 43, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/asyncio_manager.py", line 136, in run
+    return future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/asyncio_manager.py", line 219, in _wrap
+    return await fn()
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-07 21:47:12,166 ERROR   MainThread:135471 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/tmp/ipykernel_135471/910108935.py", line 5, in <module>
+    train(cnn_model, train_loader,validation_loader,criterion=criterion, optimizer=optimizer,scheduler=scheduler,hyperparameters=hyperparameters)
+  File "/tmp/ipykernel_135471/2967068527.py", line 28, in train
+    running_loss += loss.item()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2433, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1595, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 802, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 37, in _publish_output_raw
+    self._publish(rec)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 43, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/asyncio_manager.py", line 136, in run
+    return future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/asyncio_manager.py", line 219, in _wrap
+    return await fn()
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/home/ganeev/.local/lib/python3.10/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 359, in drain
+    raise exc
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe

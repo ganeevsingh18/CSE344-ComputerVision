@@ -1,0 +1,7 @@
+2025-10-08 09:23:58,287 INFO    MainThread:6508 [wandb_init.py:setup_run_log_directory():705] Logging user logs to /home/ganeev/Desktop/ComputerVision/CV_assignment1/wandb/run-20251008_092358-llqzh4j3/logs/debug.log
+2025-10-08 09:23:58,287 INFO    MainThread:6508 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to /home/ganeev/Desktop/ComputerVision/CV_assignment1/wandb/run-20251008_092358-llqzh4j3/logs/debug-internal.log
+2025-10-08 09:23:58,287 INFO    MainThread:6508 [wandb_init.py:init():832] calling init triggers
+2025-10-08 09:23:58,287 INFO    MainThread:6508 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-10-08 09:23:58,287 INFO    MainThread:6508 [wandb_init.py:init():880] starting backend
+2025-10-08 09:23:58,288 INFO    MainThread:6508 [wandb_init.py:init():883] sending inform_init request

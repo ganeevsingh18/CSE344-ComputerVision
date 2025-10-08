@@ -1,0 +1,17 @@
+{
+  "os":  "Linux-6.8.0-85-generic-x86_64-with-glibc2.35",
+  "python":  "CPython 3.10.12",
+  "startedAt":  "2025-10-08T04:55:14.871726Z",
+  "program":  "/home/ganeev/Desktop/ComputerVision/CV_assignment1/q2_2021389_HW1.ipynb",
+  "codePath":  "q2_2021389_HW1.ipynb",
+  "codePathLocal":  "q2_2021389_HW1.ipynb",
+  "git":  {
+    "remote":  "https://github.com/ganeevsingh18/CV_assignment1.git",
+    "commit":  "8875089d0d65ddfbf347d1913941389a7beb7561"
+  },
+  "email":  "ganeev21389@iiitd.ac.in",
+  "root":  "/home/ganeev/Desktop/ComputerVision/CV_assignment1",
+  "host":  "ganeev-Predator-PH315-55",
+  "executable":  "/bin/python",
+  "writerId":  "hdg4sv6ykdy21aw88b6hy9gpf2r5anr7"
+}

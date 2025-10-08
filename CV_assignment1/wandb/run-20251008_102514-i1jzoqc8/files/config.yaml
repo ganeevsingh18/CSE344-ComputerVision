@@ -1,0 +1,40 @@
+_wandb:
+    value:
+        cli_version: 0.22.1
+        e:
+            hdg4sv6ykdy21aw88b6hy9gpf2r5anr7:
+                codePath: q2_2021389_HW1.ipynb
+                codePathLocal: q2_2021389_HW1.ipynb
+                email: ganeev21389@iiitd.ac.in
+                executable: /bin/python
+                git:
+                    commit: 8875089d0d65ddfbf347d1913941389a7beb7561
+                    remote: https://github.com/ganeevsingh18/CV_assignment1.git
+                host: ganeev-Predator-PH315-55
+                os: Linux-6.8.0-85-generic-x86_64-with-glibc2.35
+                program: /home/ganeev/Desktop/ComputerVision/CV_assignment1/q2_2021389_HW1.ipynb
+                python: CPython 3.10.12
+                root: /home/ganeev/Desktop/ComputerVision/CV_assignment1
+                startedAt: "2025-10-08T04:55:14.871726Z"
+                writerId: hdg4sv6ykdy21aw88b6hy9gpf2r5anr7
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+            "3":
+                - 2
+            "4": 3.10.12
+            "5": 0.22.1
+            "8":
+                - 1
+            "12": 0.22.1
+            "13": linux-x86_64

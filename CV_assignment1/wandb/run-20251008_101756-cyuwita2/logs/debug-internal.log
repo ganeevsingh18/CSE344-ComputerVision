@@ -1,0 +1,12 @@
+{"time":"2025-10-08T10:17:56.349263148+05:30","level":"INFO","msg":"stream: starting","core version":"0.22.1"}
+{"time":"2025-10-08T10:17:56.808748333+05:30","level":"INFO","msg":"stream: created new stream","id":"cyuwita2"}
+{"time":"2025-10-08T10:17:56.808960636+05:30","level":"INFO","msg":"stream: started","id":"cyuwita2"}
+{"time":"2025-10-08T10:17:56.808912812+05:30","level":"INFO","msg":"handler: started","stream_id":"cyuwita2"}
+{"time":"2025-10-08T10:17:56.809012385+05:30","level":"INFO","msg":"writer: started","stream_id":"cyuwita2"}
+{"time":"2025-10-08T10:17:56.809046245+05:30","level":"INFO","msg":"sender: started","stream_id":"cyuwita2"}
+{"time":"2025-10-08T10:22:37.920672389+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-10-08T10:22:40.568692472+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-08T10:22:42.135308959+05:30","level":"INFO","msg":"stream: closing","id":"cyuwita2"}
+{"time":"2025-10-08T10:22:42.135330486+05:30","level":"INFO","msg":"handler: closed","stream_id":"cyuwita2"}
+{"time":"2025-10-08T10:22:42.135408025+05:30","level":"INFO","msg":"sender: closed","stream_id":"cyuwita2"}
+{"time":"2025-10-08T10:22:42.135431276+05:30","level":"INFO","msg":"stream: closed","id":"cyuwita2"}

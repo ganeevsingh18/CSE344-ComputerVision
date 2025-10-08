@@ -1,0 +1,14 @@
+Test Accuracy: 0.6714
+Test F1-Score: 0.6713
+Confusion Matrix:
+[[159  11   7   4   5   2   3  10   4   1]
+ [ 35 137   8   5   3  11   5   3  11   4]
+ [ 10   7 234   3   8  13   5   6  13   5]
+ [  2   1   8 137  36   3   7   2   4   6]
+ [  3   1   9  39 168   9   2   2  12  11]
+ [  8   5  20   8  13 124  11  10  42  12]
+ [  5   7  10   2   1  10 218  11  23   1]
+ [  4   7   2   1   5   8   2 162  41   4]
+ [  6  10  11   5   9  22  11  29 207  13]
+ [  5   3  11  19  26   6   8   9  16 193]]
+[34m[1mwandb[0m: [32m[41mERROR[0m The nbformat package was not found. It is required to save notebook history.
